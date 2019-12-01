@@ -1,0 +1,88 @@
+.nav-1-wrap
+	.title-grey
+		color: #ffffff
+		position: relative
+		z-index: 99
+	h2 
+		color: #ffffff
+		position: relative
+		z-index: 99
+		font-weight: 300
+		font-size: 18px
+	.nav-1,.bg1,.bg2,.bg3,.bg4,.bg5,.bg6,.bg7,.bg8,.bg9,.bg10,.bg11
+		&:after
+			content: ''
+			display: block
+			width: 100%
+			height: 100%
+			position: absolute
+			top: 0
+			left: 0
+			background: rgba(0,0,0,0.6)
+		nav
+			position: relative
+			z-index: 99
+			padding-top: 66px
+			@media (max-width: 1024.98px)
+				// display: none
+			a
+				font-size: 14px
+				font-weight: 600
+				color: #999999
+				text-transform: uppercase
+				flex: 0 0 50%
+				max-width: 50%
+				margin-bottom: 24px
+				display: inline-block
+				padding-left: 30px
+				position: relative
+				transition: .3s all ease-in-out
+				&:before
+						position: absolute
+						width: 12px
+						height: 12px
+						background: #fff
+						top: 50%
+						transform: translateY(-50%)
+						left: 0
+						content: ''
+						opacity: 0
+				&:hover
+					color: #fff
+					&:before
+						opacity: 1
+						transition: opacity .3s ease-in-out
+					
+				&.active
+					font-weight: 700
+					color: #fff!important
+					position: relative
+					&:before
+						opacity: 1
+
+	.pd-60
+		padding-top: 50px
+		padding-bottom: 50px
+		@media (max-width: 1024.98px)
+			padding-top: 40px
+			padding-bottom: 40px
+.bg1
+	background-image: url('../img/bg1.jpg')
+	background-size: cover
+	background-repeat: no-repeat
+	padding-top: 3.75rem 
+.bg2
+	background-image: url('../img/bg2.jpg')
+	background-size: cover
+	background-repeat: no-repeat
+	padding-top: 3.75rem 
+.bg3
+	background-image: url('../img/bg3.jpg')
+	background-size: cover
+	background-repeat: no-repeat
+	padding-top: 3.75rem 
+.bg4,.bg5,.bg6,.bg7,.bg8,.bg9,.bg10,.bg11
+	background-image: url('../img/bg4.jpg')
+	background-size: cover
+	background-repeat: no-repeat
+	padding-top: 3.75rem 

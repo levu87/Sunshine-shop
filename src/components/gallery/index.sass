@@ -1,0 +1,91 @@
+.lightgallery-display
+	padding:  0 0 50px 0
+	@media screen and(max-width:1025px)
+		padding: 0 0 40px 0
+	.row
+		.col-lg-3
+			margin-bottom: 20px
+	.figure-lightgallery
+		&:hover
+			figcaption
+				border-color: #8c0000
+			.figure-image
+				&:after
+					opacity: 1
+		.figure-image
+			overflow: hidden
+			position: relative
+			&:after
+				transition: opacity .7s ease-in-out
+				font-family: 'Material Design Icons'
+				content: '\F40D'
+				font-size: 20px
+				position: absolute
+				left: 0
+				color: #ffffff
+				font-size: 50px
+				bottom: 0
+				opacity: 0
+				pointer-events: none
+				width: 100%
+				height: 100%
+				display: flex
+				justify-content: center
+				align-items: center
+				background: rgba(#000000,.4)
+			&:hover
+				a
+					img
+						transform: scale(1.05)
+			a
+				height: 200px
+				display: block
+				width: auto
+				&:not(:first-child)
+					display: none
+				iframe
+					pointer-events: none
+				img,iframe
+					transition: transform .3s ease-in-out
+					width: 100%
+					height: 100%
+					object-fit: cover
+
+		figcaption
+			min-height: 50px
+			transition: .3s all ease-in-out
+			position: relative
+			border-left: 10px solid #f2f2f2
+			padding-left: 16px
+			margin-top: 16px
+			.title
+				*
+					font-size: 18px
+					color: #333333
+					font-weight: 400
+					display: -webkit-box
+					-webkit-line-clamp: 3
+					-webkit-box-orient: vertical
+					overflow: hidden
+					line-height: 27px
+	
+			@media screen and(max-width:768px)
+				.title
+					*
+						font-size: 16px
+.customer-service
+	.modulepager
+		li
+			display: inline-block
+			padding: 0 10px
+			&:last-child()
+				position: relative
+				&:after
+					font-family: 'Material Design Icons'
+					content: '\f142'
+					font-size: 20px
+			&.active
+				a,span
+					color: #ffffff
+					background: #000000!important
+					border: none

@@ -1,0 +1,81 @@
+.safety-1,.safety-2
+	.textbox
+		text-align: justify
+	p
+		@media (max-width: 1024.98px)
+			font-size: 15px
+		@media (max-width: 767.98px)
+			font-size: 14px
+		
+.safety-1
+	p
+		&:not(:last-child)
+			margin-bottom: 16px
+.safety-2
+	.imgbox
+		margin-bottom: 20px
+		img
+			max-width: 100%
+			height: auto
+	p
+		margin-bottom: 16px
+
+.safety-3
+	background: url('../img/home/business/2.jpg')
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center center
+	height: 400px
+	@media (max-width: 1024.98px)
+		height: 290px
+	@media (max-width: 767.98px)
+		height: 180px
+.safety-4
+	.textbox
+		text-align: justify
+		p
+			@media (max-width: 1024.98px)
+				font-size: 15px
+			@media (max-width: 767.98px)
+				font-size: 14px
+			&:not(:last-child)
+				margin-bottom: 16px
+	.video
+		padding: 20px
+		background: #f0f0f0
+		.plyr__controls
+			@media (min-width: 1025px)
+				display: none
+		.plyr__control.plyr__control--overlaid
+			width: 70px
+			height: 70px
+			padding: 0
+			display: flex
+			justify-content: center
+			align-items: center
+			background: white
+			@media (min-width: 1025px)
+				top: unset
+				left: 45px
+				bottom: 30px
+				transform: none
+			svg
+				transform: scale(1.5)
+				fill: #029347
+
+.safety-5
+	.item
+		margin-bottom: 20px
+		time
+			font-size: 16px
+			color: #999999
+		h3
+			font-weight: 400
+			font-size: 24px
+			@media (max-width: 1024.98px)
+				font-size: 21px
+			@media (max-width: 767.98px)
+				font-size: 18px
+		&:hover
+			h3
+				color: #029347

@@ -1,0 +1,233 @@
+.product-by-category 
+	background: #171e26
+	padding: 50px 0 
+	@media screen and(max-width:1441px)
+		padding: 40px 0
+.product-by-category-wrapper
+	ul
+		padding: 0
+		margin: 0
+		list-style-type: none
+		li
+			.title-caption
+				border-bottom: 1px solid #686c70
+				
+			&:first-child
+				.title-caption
+					border-top: none
+					border-bottom: 1px solid #686c70
+			position: relative
+			margin:  10px 0 0 0
+			&.active
+				.product-wrapper
+					display: block
+					opacity: 1
+				.title-caption
+					a
+						color: #ffffff
+					.title
+						color: #ffffff
+						&:before
+							transform: rotate(-180deg) !important
+							line-height: 16px
+							color: #fff
+			.title-caption
+				transition: transform .3s  ease-in-out
+				display: flex
+				padding: 10px 0
+				justify-content: space-between
+				align-items: center
+				&:hover
+					.title
+						color: #ffffff
+						&:before
+							color: #ffffff
+					a
+						color: #ffffff
+				.title
+					cursor: pointer
+					text-transform: uppercase
+					display: block
+					font-size: 18px
+					font-weight: 700
+					transition: transform .3s  ease-in-out, .3s ease-in-out
+					@media screen and(max-width:576px)
+						font-size: 16px
+					color: #929598
+					&:before
+						font-family: 'Material Design Icons'
+						content: '\f140'
+						font-size: 20px
+						width: 22px
+						display: inline-block
+						height: 16px
+						flex:  0 0 17px
+						font-size: 20px
+						transition: transform .3s  ease-in-out
+						color: #929598
+				a
+					transition: transform .3s  ease-in-out,.3s ease-in-out
+					font-size: 16px
+					display: block
+					font-weight: 500
+					color: #929598
+					&:hover
+						a
+							color: #a12505
+	@media screen and(max-width:767.8px)
+		ul
+			li
+				&.active
+					&:before
+						top: 8px
+				&:before
+					left: 0
+					top: 0
+				.title-caption
+					padding: 0 0 10px 0
+					a
+						width: 20px
+						height: 25px
+						overflow: hidden
+						position: relative
+						&:before
+							font-family: 'Material Design Icons'
+							content: '\F327'
+							font-size: 20px
+
+.product-wrapper
+	
+.product-item-wrapper
+	display: flex
+	flex-wrap: wrap
+	flex: 0 0 100%
+.product-item-category
+	padding: 0 10px
+	flex:  0 0 100%
+	max-width: 100%
+	transition: .3s all ease-in-out
+	&:hover
+		.figure-image
+			
+			a
+				img
+					margin-top: -4px
+
+
+	.figure-image
+		position: relative
+		padding: 20px 20px 0 20px
+		margin-bottom: 16px
+		.discount
+			position: absolute
+			top: -5px
+			right: -5px
+			p
+				color: #ffffff
+				font-weight: 600
+				font-size: 14px
+				width: 32px
+				height: 20px
+				display: flex
+				justify-content: center
+				align-items: center
+				background: #b72600
+
+		> a
+			display: block
+			height: 200px
+			padding: 20px
+			width: auto
+			img
+				transition: .3s all ease-in-out
+
+				width: 100%
+				height: 100%
+				object-fit: contain
+	figcaption
+		.top-caption
+			padding-bottom: 12px
+			h2
+				cursor: pointer
+				line-height: 22px
+				&:hover
+					*
+						text-decoration: underline
+						color: #ffffff
+				*
+					margin-bottom: 0
+					display: block
+					font-size: 18px
+					font-weight: 700
+					color: #ffffff
+					text-transform: uppercase
+			h3
+				cursor: pointer
+				&:hover
+					*
+						text-decoration: underline
+						color: #ffffff
+				*
+					display: -webkit-box
+					-webkit-line-clamp: 2
+					-webkit-box-orient: vertical
+					overflow: hidden
+					line-height: 20px
+					font-size: 14px
+					font-weight: 400
+					height: 50px
+					color: #cccccc
+		.bottom-caption
+			position: relative
+			display: flex
+			justify-content: space-between
+			align-items: center
+			.price
+				h4
+					font-size: 18px
+					font-weight: 700
+					color: #cccccc
+				h5
+					*
+						font-size: 14px
+						font-weight: 400
+						color: #cccccc
+			.cart
+				display: flex
+				justify-content: center
+				align-items: center
+				a
+					cursor: pointer
+					margin-left: 10px
+					&:hover
+						em
+							&:before
+								color: #b72600
+					&:first-child
+						&:hover
+							em
+								&:before
+									content: '\F2D1'
+									color: #b72600
+					em
+						transition: .3s all ease-in-out
+						font-size: 20px
+						color: #cccccc
+					img
+						margin-bottom: 8px
+
+		@media screen and(max-width:1025px)
+			.top-caption
+				h2
+					*
+						font-size: 17px
+				h3
+					*
+						font-size: 13px
+			.bottom-caption
+				.price
+					h4
+						font-size: 17px
+					h5
+						*
+							font-size: 13px

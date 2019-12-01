@@ -1,0 +1,167 @@
+footer
+	padding: 50px 0 10px 0
+	background: url('../img/bg-footer.png')
+	background-repeat: no-repeat
+	background-size: cover
+	.certificate
+		img
+			max-width: 100%
+			height: auto
+	.social-network-wrapper
+		display: flex
+		justify-content: flex-start
+		align-items: center
+		margin-bottom: 16px
+		.social-button
+			&:not(:last-child)
+				margin-right: 16px
+			a
+				display: flex
+				justify-content: center
+				align-items: center
+				width: 46px
+				height: 46px
+				border: 1px solid #b2b2b2
+				border-radius: 50%
+				transition: .3s all ease-in-out
+				&:hover
+					border-color: #ffffff
+					em
+						color: #8c0000
+				em
+					font-size: 18px
+					color: #b2b2b2
+	.nav
+		padding-bottom: 50px
+		.title 
+			font-size: 18px
+			text-transform: uppercase
+			color: #ffffff
+			padding-bottom: 16px
+		.caption
+			font-size: 16px
+			font-weight: 700
+			color: $main
+			display: inline-block
+			margin-bottom: 10px
+		nav
+			display: flex
+			flex-direction: column
+			max-width: 90%
+
+			a,p
+				position: relative
+				margin-bottom: 8px
+				color: $main
+				font-size: 15px 
+				line-height: 24px
+				display: inline
+				transition: .3s all ease-in-out
+				&:hover,&:active
+					color: #ffffff
+				em
+					margin-right: 6px
+
+	
+		.project
+			a 
+				font-size: 18px 
+				color: #ffffff
+				text-transform: uppercase
+				line-height: 40px
+			.button 
+				display: flex
+				.fb,.yt
+					width: 30px
+					height: 30px
+					border: 1px solid #ffffff
+					display: flex
+					justify-content: center
+					align-items: center
+					margin-right: 15px
+					&:hover,&:active
+						background: #8c2004
+						transition: all 0.3s ease-in-out
+						border: none
+						
+	.copy-right
+		border-top: 1px solid #424345
+		display: flex
+		padding-top: 10px
+		align-items: center
+		.left
+			p 
+				font-size: 14px
+				color: $main 
+				a 
+					color: $main
+					&:hover 
+						text-decoration: underline
+						transition: all 0.3s ease-in-out
+		.right 
+			margin-left: auto
+			ul 
+				padding: 0
+				margin: 0
+				list-style: none 
+				li
+					display: inline-block
+					&:not(:last-child)
+						padding-right: 20px
+						position: relative
+						&:after
+							content: ''
+							display: block
+							position: absolute
+							right: 6px
+							bottom: 4px
+							width: 1px
+							height: 16px
+							background: $main
+					&:hover
+						a
+							color: #ffffff
+					a
+						font-size: 14px
+						color: $main
+
+	@media (max-width: 1025px)
+		.copy-right
+			flex: 0 0 100%
+			max-width: 100%
+			flex-wrap: wrap
+			.left
+				margin-bottom: 8px
+				flex: 0 0 100%
+				max-width: 100%
+				text-align: center
+			.right
+				flex: 0 0 100%
+				max-width: 100%
+				text-align: center
+	.gotop
+		position: absolute
+		top: 3rem 
+		right: 0
+		width: 50px
+		height: 50px
+		background: #f5f5f5 
+		display: flex
+		text-align: center
+		align-items: center
+		justify-content: center
+		font-size: 35px
+	@media screen and(max-width:576px)
+		.nav
+			&:last-child
+				.title
+					text-align: center
+		.certificate
+			display: flex
+			justify-content: center
+			align-items: center
+		.social-network-wrapper
+			align-items: center
+			justify-content: center
+		.nav
+			padding-bottom: 30px

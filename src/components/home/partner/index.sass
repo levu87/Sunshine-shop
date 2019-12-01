@@ -1,0 +1,42 @@
+.partner-swiper
+	background: #f5f5f5
+	padding: 40px 0
+	background: #171e26
+	.partnet-swiper-wrapper
+		padding: 0 40px
+		position: relative
+		.navigation-partner-prev,.navigation-partner-next
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			width: 36px
+			height: 36px
+			display: flex
+			justify-content: center
+			align-items: center
+			&:hover
+				em
+					color: #a12505
+			&:focus
+				outline: none
+			em
+				transition: .3s all ease-in-out
+				font-size: 24px
+				color: #999999
+		.navigation-partner-next
+			right: 0
+		.navigation-partner-prev
+			left: 0
+	.swiper-container
+		.swiper-wrapper
+			display: flex
+			justify-content: flex-start
+			align-items: center
+		.swiper-slide
+			display: flex
+			justify-content: center
+			align-items: center
+		.swiper-image
+			img
+				max-width: 100%
+				height: auto

@@ -1,0 +1,401 @@
+.product-information-detail
+	padding: 10px 0 0
+	@media screen and(max-width:1025px)
+		padding: 0 0 0
+	.swiper-wrapper
+		padding: 2px
+	.swiper-product-top
+		margin-bottom: 18px
+		.swiper-container
+		.wrapper
+			.swiper-image
+				height: 440px
+				width: auto
+				padding: 20px 
+				img
+					width: 100%
+					height: 100%
+					object-fit: contain
+			@media screen and(max-width:1441px)
+				.swiper-image
+					padding: 0
+					height: 400px
+			@media screen and(max-width:768px)
+				.swiper-image
+					height: 350px
+			@media screen and(max-width:767px)
+				.swiper-image
+					height: 300px
+	.swiper-product-thumb
+		.swiper-container
+			padding: 2px
+		.wrapper
+			.swiper-image
+				height: 160px
+				width: auto
+				padding: 16px 0
+				@media screen and(max-width:576px)
+					height: 100px
+					padding: 0
+				img
+					width: 100%
+					height: 100%
+					object-fit: contain
+.product-information-wrapper
+	height: 100%
+	display: flex
+	justify-content: space-between
+	flex-direction: column
+	table
+		width: 100%
+		tr
+			&:last-child
+				td
+					&:last-child
+						font-weight: 700
+						color: #b72600
+			&:first-child
+				td
+					padding: 0  0 8px 0
+				td:nth-child(2)
+					font-weight: bold
+			td
+				padding: 6px 0
+				color: #000000
+				font-size: 16px
+				font-weight: 400
+				.color
+					width: 24px
+					height: 24px
+					display: inline-flex
+					transition: .2s transform ease-in-out
+					&:hover
+						transform: scale(1.04)
+
+					&:not(:last-child)
+
+						margin-right: 10px
+				a
+					color: #b2b2b2
+					text-decoration: underline
+					em
+						color: #b2b2b2
+				&:first-child
+					width: 30%
+					max-width: 30%
+					font-weight: 600
+					
+	
+	.download-file
+		border-top: 1px solid #ebebeb
+		border-bottom: 1px solid #ebebeb
+		padding: 10px 0
+		*
+			color: #8a1f0e
+		a
+			display: flex
+			justify-content: flex-start
+			align-items: center
+			color: #8a1f0e
+			text-decoration: underline
+			em
+	.mota 
+		padding-top: 0  0 80px
+	.hot-line-wrapper
+		border-bottom: 1px solid #ebebeb
+		border-top: 1px solid #ebebeb
+		padding: 15px 0
+
+		p
+			display: flex
+			justify-content: flex-start
+			align-items: center
+			color: #888888
+			font-size: 16px
+			font-weight: 400
+			a
+				margin-left: 8px
+				text-decoration: none
+				font-weight: 700
+				font-size: 18px
+				color: #8a1f0e
+	.button-wrapper
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin: 30px  0  40px
+		position: relative
+	.check-out-button
+		position: relative
+		&.active
+			opacity: 0
+		a
+			padding: 14px 30px
+			background: #171e26
+			display: flex
+			justify-content: center
+			align-items: center
+			text-decoration: none
+			text-transform: uppercase
+			color: #ffffff
+			position: relative
+			&:before
+				content: ''
+				position: absolute
+				top: 0
+				bottom: 0
+				right: 0
+				width: 3px
+				background-color: #8c0000
+				transform-origin: center
+				transform: scaleY(0)
+				transition: transform 0.5s ease
+			&:hover
+				color: #ffffff
+				&:before
+					transform: scaleY(1)
+	.item-quantity
+		position: absolute
+		bottom: 0
+		pointer-events: none
+		z-index: -1
+		opacity: 0
+		left: 0
+		border: solid 1px #c5c5c5
+		&.active
+			z-index: 111
+			opacity: 1
+			pointer-events: auto
+			transition:  opacity .3s ease-in-out
+		.input-group
+			display: flex
+			justify-content: center
+			align-items: center
+		.input-group-btn
+			display: flex
+			justify-content: center
+			align-items: center
+			background: #f5f5f5
+			height: 40px
+			width: 45px
+			position: relative
+			&:hover
+				background: $main
+				color: #fff
+				transition: .25s all ease-in-out
+			.qty-plus
+				height: 100%
+				width: 100%
+				line-height: 40px
+				text-align: center
+				display: flex
+				align-items: center
+				justify-content: center
+				em
+					color: #c5c5c5
+				&:hover 
+					em
+						color: #8c0000
+			.qty-minus
+				height: 100%
+				width: 100%
+				line-height: 40px
+				text-align: center
+				display: flex
+				align-items: center
+				justify-content: center
+				em
+					color: #c5c5c5
+				&:hover 
+					em
+						color: #8c0000
+		input
+			border: 0
+			text-align: center
+			background: #ffffff
+			width: 45px
+			height: 40px
+		&:hover 
+			a
+				color: #f5f5f5!important
+	&.active 
+		opacity: 0
+		.item-quantity
+			opacity: 1
+	.social-network-wrapper
+		display: flex
+		justify-content: center
+		align-items: center
+		p
+			
+			color: #888888
+			font-weight: 400
+			margin-right: 16px
+			&:hover 
+				color: #8c0000
+		.social-button
+			&:not(:last-child)
+				margin-right: 16px
+			a
+				display: flex
+				justify-content: center
+				align-items: center
+				em
+					color: #888888
+				&:hover 
+					em 
+						color: #8c0000
+
+
+	@media screen and(max-width:1200px)
+		padding: 0 20px
+		table
+			tr
+				td
+					&:first-child
+						width: 40%
+						max-width: 40%
+		.check-out-button
+			a
+				padding: 10px 20px
+	@media screen and(max-width:1025px)
+		margin-top: 30px
+		padding: 0
+		.check-out-button
+			a
+				padding: 10px 40px
+	@media screen and(max-width:576px)
+		margin-top: 20px
+		padding: 0
+		table
+			tr
+				display: flex
+				justify-content: flex-start
+				align-items: flex-start
+				flex: 0 0 100%
+				flex-wrap: wrap
+				td
+					flex: 0 0 50%
+					max-width: 50%
+	@media screen and(max-width:500px)
+		.bottom-button-wrapper
+			flex-direction: column
+			align-items: center
+		.social-network-wrapper
+			margin: 20px 0 0 0
+	@media screen and(max-width:400px)
+			table
+				tr
+					padding: 8px 0
+					td
+						padding: 0
+						flex: 0 0 100%
+						max-width: 100%
+						&:first-child
+							margin-bottom: 4px
+
+.product-tab-wrapper
+	padding-top: 50px
+	li
+		&:hover
+			a
+				transition: .3s all ease-in-out
+				text-decoration: none !important
+				color: #8a1f0e
+	@media screen and(max-width:1441px)
+		padding-top: 30px
+		@media screen and(max-width:1025px)
+			padding-top: 30px
+	.tab-wrapper
+		tr 
+			td 
+				color: #b2b2b2!important
+.tab-wrapper
+	background: #171e26
+	position: relative
+	&:before,&:after
+		content: ''
+		display: block
+		position: absolute
+		top: -67px
+		width: 1000px
+		height: 1500px
+		background: #171e26
+		
+	&:before
+		left: -1000px
+	&:after
+		right: -1000px
+	.tab-item
+		padding: 16px 0
+		display: none
+		@media screen and(max-width:1025px)
+			padding: 0
+		&.active
+			display: block
+		p
+			font-size: 16px
+			color: #888888
+			font-weight: 400
+			margin-bottom: 16px
+		img
+			display: block
+			width: 100%
+			text-align: center
+			max-width: 100%
+			height: auto
+			margin: 16px auto
+.others-project
+	.top-caption
+		h2
+			a
+				color: #999!important
+			&:hover
+				a
+					color: #ffffff
+					text-decoration: none !important
+		h3
+			a 
+				color: #999!important
+				height: 50px
+			&:hover
+				a
+					color: #ffffff
+					text-decoration: none !important
+	.white-title-bg-grey
+		padding: 16px
+		display: flex
+		justify-content: flex-start
+		align-items: center
+		background: #171e26
+		*
+			text-transform: uppercase
+			font-size: 18px
+			font-weight: 600
+			color: #ffffff
+	.list-similar
+		background: #171e26
+		padding: 25px
+		.figure-product
+			figcaption
+				padding: 0 20px 20px
+				h2,h3
+					cursor: pointer
+					line-height: 22px
+					&:hover
+						a 
+							color: #ffffff!important
+					a 
+						transition: all .3s ease
+
+					
+	background: #171e26
+	ul 
+		li 
+			&.active 
+				a 
+					color: #ffffff
+.tab-wrapper
+	.tab-item
+		p
+			color: #b2b2b2

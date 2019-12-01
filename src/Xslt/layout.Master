@@ -1,0 +1,237 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="~/App_MasterPages/layout.Master.cs" Inherits="CanhCam.Web.layout" %>
+
+<!DOCTYPE html>
+<html id="Html1" runat="server">
+
+<head id="Head1" runat="server">
+	<title></title>
+	<portal:MetaContent ID="MetaContent" runat="server" />
+	<link rel="apple-touch-icon" sizes="57x57" href="/Data/Sites/1/media/favicon.ico/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/Data/Sites/1/media/favicon.ico/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/Data/Sites/1/media/favicon.ico/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/Data/Sites/1/media/favicon.ico/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/Data/Sites/1/media/favicon.ico/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/Data/Sites/1/media/favicon.ico/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/Data/Sites/1/media/favicon.ico/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/Data/Sites/1/media/favicon.ico/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/Data/Sites/1/media/favicon.ico/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/Data/Sites/1/media/favicon.ico/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/Data/Sites/1/media/favicon.ico/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/Data/Sites/1/media/favicon.ico/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/Data/Sites/1/media/favicon.ico/favicon-16x16.png">
+	<link rel="manifest" href="/Data/Sites/1/media/favicon.ico/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<portal:StyleSheetCombiner ID="StyleSheetCombiner" runat="server" IncludejQueryUI="false"
+		JQueryUIThemeName="smoothness" />
+	<portal:Favicon ID="Favicon1" runat="server" />
+	<portal:ScriptLoader ID="ScriptLoader1" runat="server" IncludejQueryUICore="true" IncludeFancyBox="true" />
+	<portal:GoogleAnalyticsScript ID="GoogleAnalyticsScript1" runat="server" />
+	<link
+		href="https://fonts.googleapis.com/css?family=Exo:200,300,400,500,600,700,800&amp;display=swap&amp;subset=vietnamese"
+		rel="stylesheet">
+
+	<!--*********************************************************************************************-->
+	<!-- Canh Cam - the best Web Solutions Provider - http://www.canhcam.vn                          -->
+	<!-- 156 Nguyen Van Thu, District 1, Ho Chi Minh City, Viet Nam.                                 -->
+	<!-- Phone: (+84) 8 38238364 – Fax: (+84) 8 38238365 - Email: info@canhcam.vn                    -->
+	<!-- Facebook: https://www.facebook.com/canhcam.vn                                               -->
+	<!--*********************************************************************************************-->
+</head>
+
+<body id="Body" runat="server" class="canhcam">
+	<portal:FacebookSdk ID="fbsdk" runat="server" />
+	<portal:LayoutDisplaySettings ID="LayoutDisplaySettings1" runat="server" />
+
+	
+
+	<form id="frmMain" runat="server">
+		<asp:SiteMapDataSource ID="SiteMapData" runat="server" ShowStartingNode="false" />
+		<asp:SiteMapDataSource ID="PageMapDataSource" runat="server" ShowStartingNode="false" />
+		<asp:SiteMapDataSource ID="ChildPageSiteMapData" runat="server" ShowStartingNode="false" />
+		<asp:ScriptManager ID="ScriptManager1" EnablePageMethods="true" runat="server" />
+		<div id="wrapper">
+			<header>
+				<section class="header-sunshine">
+					<div class="container">
+						<div class="header-wrapper-left">
+							<div class="navbrand">
+								<portal:modulewrapper id="mdl135" runat="server" configuremoduleid="135" />
+							</div>
+						</div>
+						<div class="header-wrapper-right">
+							<div class="header-wrapper-top">
+								<div class="search-wrapper">
+									<portal:modulewrapper id="mdl170" runat="server" configuremoduleid="170" />
+								</div>
+								<div class="contact-wrapper">
+									<portal:modulewrapper id="mdl171" runat="server" configuremoduleid="171" />
+								</div>
+								<div class="account-wrapper"><em class="mdi mdi-account"></em>
+									<div class="account-wrapper-toggle">
+										<portal:WelcomeMessage ID="WelcomeMessage" runat="server"
+											WrapInProfileLink="true" ProfileLink="~/Account/UserProfile.aspx"
+											RenderAsListItem="true" ListItemCss="firstnav"
+											OverrideFormat="Hi, <span>{DisplayName}</span>" />
+										<portal:RegisterLink ID="RegisterLink" runat="server" RenderAsListItem="true" />
+										<portal:LoginLink ID="LoginLink" runat="server" RenderAsListItem="true" />
+										<portal:LogoutLink ID="LogoutLink" runat="server" RenderAsListItem="true" />
+									</div>
+								</div>
+								<div class="wish-list-wrapper">
+									<portal:modulewrapper id="mdl217" runat="server" configuremoduleid="217" />
+								</div>
+								<div class="cart-wrapper">
+									<portal:modulewrapper id="mdl213" runat="server" configuremoduleid="213" />
+								</div>
+							</div>
+							<div class="header-wrapper-bottom">
+								<portal:modulewrapper id="mdl172" runat="server" configuremoduleid="172" />
+								<div class="language-wrapper">
+									<portal:modulewrapper id="mdl173" runat="server" configuremoduleid="173" />
+								</div>
+								<div class="group-link-wrapper">
+									<div class="group-link-wrapper">
+										<portal:modulewrapper id="mdl174" runat="server" configuremoduleid="174" />
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="mobile-toggle"><em class="lnr lnr-menu"></em></div>
+						<div class="mobile-wrapper"></div>
+					</div>
+				</section>
+			</header>
+			<main>
+				<asp:Panel ID="divAlt1" runat="server" CssClass="altcontent1">
+					<asp:ContentPlaceHolder ID="altContent1" runat="server">
+					</asp:ContentPlaceHolder>
+				</asp:Panel>
+				<asp:Panel ID="divLeft" runat="server" CssClass="leftside" Visible="True" SkinID="pnlPlain">
+					<asp:ContentPlaceHolder ID="leftContent" runat="server">
+					</asp:ContentPlaceHolder>
+				</asp:Panel>
+				<asp:Panel ID="divCenter" runat="server" Visible="True" CssClass="center-rightandleftmargins"
+					SkinID="pnlPlain">
+					<asp:ContentPlaceHolder ID="mainContent" runat="server">
+					</asp:ContentPlaceHolder>
+				</asp:Panel>
+				<asp:Panel ID="divRight" runat="server" Visible="True" CssClass="rightside" SkinID="pnlPlain">
+					<asp:ContentPlaceHolder ID="rightContent" runat="server">
+					</asp:ContentPlaceHolder>
+				</asp:Panel>
+				<asp:Panel ID="divAltContent2" runat="server" CssClass="altcontent2">
+					<asp:ContentPlaceHolder ID="altContent2" runat="server"></asp:ContentPlaceHolder>
+				</asp:Panel>
+			</main>
+			<footer>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-lg-3 nav">
+							<portal:modulewrapper id="mdl175" runat="server" configuremoduleid="175" />
+						</div>
+						<div class="col-md-6 col-lg-3 nav">
+							<portal:modulewrapper id="mdl176" runat="server" configuremoduleid="176" />
+						</div>
+						<div class="col-md-6 col-lg-3 nav">
+							<portal:modulewrapper id="mdl177" runat="server" configuremoduleid="177" />
+						</div>
+						<div class="col-md-6 col-lg-3 nav">
+							<portal:modulewrapper id="mdl178" runat="server" configuremoduleid="178" />
+						</div>
+					</div>
+					<div class="copy-right">
+						<div class="left">
+							<p>Copyright © 2019 Sunshine Group. All Rights Reserved. Designed by <span> <a
+										href="https://canhcam.vn">Cánh Cam.</a></span></p>
+						</div>
+						<div class="right">
+							<ul>
+								<li><a href="#">Conditions of Use</a></li>
+								<li><a href="#"> Privacy </a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<portal:AutoHidePanel ID="ah1" CssClass="cmsadminpanel" runat="server">
+			<div class="row">
+				<div class="col-lg-12">
+					<nav>
+						<ul class="nav navbar-nav listmenu">
+							<portal:AdminMenuLink ID="lnkDashboard" IconCssClass="fa fa-key" RenderAsListItem="true"
+								runat="server" />
+							<portal:FileManagerLink ID="lnkFileManager" IconCssClass="fa fa-folder-open"
+								RenderAsListItem="true" runat="server" />
+							<portal:PageEditFeaturesLink ID="lnkPageContent" IconCssClass="fa fa-cog"
+								RenderAsListItem="true" runat="server" />
+							<portal:PageEditSettingsLink ID="lnkPageSettings" IconCssClass="fa fa-edit"
+								RenderAsListItem="true" runat="server" />
+							<portal:NewZoneLink ID="lnkNewZone" IconCssClass="fa fa-file" RenderAsListItem="true"
+								runat="server" />
+							<portal:ZoneEditSettingsLink ID="lnkZoneSettings" IconCssClass="fa fa-edit"
+								RenderAsListItem="true" runat="server" />
+							<li>
+								<div class="form-inline">
+									<div class="form-group">
+										<label class="sr-only">Mode</label>
+									</div>
+									<div class="form-group">
+										<asp:ContentPlaceHolder ID="pageEditContent" runat="server">
+										</asp:ContentPlaceHolder>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<ul class="nav">
+							<li><a href="#" id="pullmenucms"><i class="fa fa-chevron-circle-right"></i></a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<script type="text/javascript">
+				$(document).ready(function () {
+					$("#pullmenucms").click(function (e) {
+						e.preventDefault();
+						if ($(this).parents('.cmsadminpanel').hasClass('toggled')) {
+							ShowToolbar();
+							Set_Cookie('toolbarOpenState', 'open');
+						} else {
+							HideToolbar();
+							Set_Cookie('toolbarOpenState', 'closed');
+						}
+					});
+					var openState = Get_Cookie('toolbarOpenState');
+					if (openState != null) {
+						if (openState == 'closed') {
+							HideToolbar();
+						}
+						if (openState == 'open') {
+							ShowToolbar();
+						}
+					}
+				});
+
+				function HideToolbar() {
+					$('.cmsadminpanel').addClass("toggled");
+					$('.fa-chevron-circle-right').addClass('fa-rotate-180');
+				}
+
+				function ShowToolbar() {
+					$('.cmsadminpanel').removeClass("toggled");
+					$('.fa-chevron-circle-right').removeClass('fa-rotate-180');
+				}
+			</script>
+		</portal:AutoHidePanel>
+		<portal:Woopra ID="woopra11" runat="server" />
+	</form>
+	<script src="/Data/Sites/1/skins/default/js/core.min.js"></script>
+	<script src="/Data/Sites/1/skins/default/js/main.min.js"></script>
+	<script src="/Data/Sites/1/skins/default/js/ecommerce.js"></script>
+</body>
+
+</html>

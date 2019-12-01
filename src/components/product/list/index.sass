@@ -1,0 +1,259 @@
+.product-list
+	margin-top: 40px
+	padding-bottom: 50px
+	@media screen and(max-width:1025px)
+		padding-bottom: 40px
+		margin-top: 10px
+	.heading
+		margin-bottom: 15px
+		display: flex
+		align-items: center
+		.title
+			h2
+				font-size: 20px
+				text-transform: uppercase
+				color: #ffffff
+				font-weight: 600
+		.order-by
+			margin-left: auto
+			display: flex
+			align-items: center
+			margin-right: 20px
+			span 
+				color: #ffffff
+			.custom-select 
+				width: 180px
+				height: 40px
+				position: relative 
+				left: 20px
+				select 
+					display: none 
+			.select-selected 
+				background-color: none
+				border: 1px solid #666
+				white-space: nowrap
+				&:after 
+					content: '\f140'
+					font: normal normal normal 24px/1 Material Design Icons
+					position: absolute
+					top: 50%
+					right: 10px
+					font-size: 18px
+					transform: translateY(-50%)
+					color: #666666
+					border-color: #fff transparent transparent transparent 
+				&.select-arrow-active 
+					&:after 
+						border-color: transparent transparent #fff transparent           
+			.select-items a,.select-selected 
+				color: #666666
+				padding: 8px 16px 
+				border: 1px solid transparent 
+				border-color: #666666 #666666 #666666 #666666
+				cursor: pointer 
+				user-select: none 
+				&.select-arrow-active 
+					border-color: #666666 #666666 transparent #666666
+			.select-items 
+				position: absolute 
+				background-color: #171e26
+
+				top: 100% 
+				left: 0 
+				right: 0 
+				z-index: 99 
+			.select-items>a
+				display: block
+				border-color: #666666
+				color: #666666
+				border-top: none!important
+				border-bottom: none
+				background: #171e26
+			.select-items>a:last-child 
+				border-bottom: 1px solid #666666
+				background: #171e26
+			.select-hide 
+				display: none 
+			.select-items a:hover, .same-as-selected 
+				background: none 
+				color: #ffffff
+			// .select
+			// 	display: inline-block
+			// 	position: relative
+			// 	select
+			// 		color: #ffffff
+			// 		padding: 5px 10px
+			// 		background: none
+			// 		border-radius: 50px
+			// 		padding-right: 30px
+			// 		border-color: #d7d7d7
+			// 		-webkit-appearance: none
+			// 		-moz-appearance: none
+			// 		&:focus
+			// 			outline: none
+			// 	&:after
+			// 		content: '\f140'
+			// 		font: normal normal normal 24px/1 Material Design Icons
+			// 		position: absolute
+			// 		top: 50%
+			// 		right: 10px
+			// 		font-size: 14px
+			// 		transform: translateY(-50%)
+			// 		color: #999999
+		.list-style
+			margin-left: 20px
+			.style-option
+				display: inline-block
+			a
+				color: #999999
+				display: inline-block
+				padding: 0 6px
+				font-size: 18px
+				&.active
+					color: #ed7d31
+		.list-display
+			margin-left: 20px
+			span 
+				color: #ffffff
+			.display-option
+				display: inline-block
+			a
+				padding: 0 8px
+				display: inline-block
+				transition: .4s ease-in-out all
+				position: relative
+				color: #999999
+				line-height: 1
+				&.active, &:hover
+					color: #ffffff
+				&:after
+					content: ''
+					width: 1px
+					height: 100%
+					background: #999999
+					position: absolute
+					top: 0
+					right: 0
+				&:last-child
+					&:after
+						display: none
+	.list-item
+		margin: 0 -5px
+		&>div
+			margin-bottom: 20px
+			padding: 0 5px
+
+	@media(max-width: 768px)
+		margin-top: 20px
+		padding-bottom: 30px
+		.heading
+			display: block
+			.title
+				margin-bottom: 15px
+			.list-style, .list-display
+				margin-top: 8px
+				margin-left: 0
+.product-item-category
+	background: #171e26!important
+.product-item
+	height: 100%
+	transition: .5s ease-in-out all
+	&:hover
+		figcaption
+			h5
+				a
+					color: #ed7d31
+	.image
+		a
+			position: relative
+			height: 100%
+			display: flex
+			justify-content: center
+			align-items: center
+	img
+		max-height: 100%
+		object-fit: cover
+		max-width: 100%
+	.image
+		padding: 20px
+		height: 200px
+		overflow: hidden
+		display: flex
+		justify-content: center
+		align-items: center
+	.product-compare-button
+		text-align: center
+		margin-top: 10px
+	.btn_compare
+		display: inline-block
+		padding: 8px 20px
+		text-align: center
+		background: #ed7d31
+		border-radius: 50px
+		// text-transform: uppercase
+		color: #fff
+		span
+			user-select: none
+			transition: .4s ease-in-out
+			cursor: pointer
+	figcaption
+		padding: 15px
+		h5
+			font-size: 15px
+			display: -webkit-box
+			-webkit-box-orient: vertical
+			-webkit-line-clamp: 2
+			overflow: hidden
+			margin-bottom: 10px
+			font-weight: 500
+		a
+			color: #ffffff
+			transition: .4s ease-in-out all
+		.bottom
+			display: flex
+			justify-content: space-between
+			align-items: baseline
+			.price
+				span
+					display: block
+					&.new
+						color: #c45911
+						font-size: 18px
+						font-weight: 600
+					&.old
+						color: #999
+						text-decoration: line-through
+			.cart
+				display: flex
+				justify-content: center
+				align-items: center
+				a
+					font-size: 18px
+					color: #999
+					transition: .4s ease-in-out
+					&:hover
+						color: #eb7d3c
+	@media(max-width: 768px)
+		.image
+			height: 150px
+		figcaption
+			padding: 10px
+			h5
+				font-size: 14px
+			.bottom
+				.price
+					span
+						&.new
+							font-size: 15px
+						&.old
+							font-size: 13px
+.product-list .list-item.active
+	&>div
+		flex: 0 0 100%
+		max-width: 100%
+	.product-item
+		display: flex
+		figcaption
+			width: calc(100% - 200px)
+.product-display
+	background: #171e26

@@ -1,0 +1,203 @@
+.contact-information
+	padding: 50px 0
+	@media screen and(max-width:1025px)
+		padding: 30px 0
+		.col-xl-3
+			@media screen and(max-width:576px)
+				background: #ecebe9
+	.contact-information-wrapper
+		background: url(../img/bg-footer.png)
+		background-repeat: no-repeat
+		padding: 50px 30px
+		height: 412px
+		overflow-y: auto
+		&::-webkit-scrollbar
+        	width: 3px
+		&::-webkit-scrollbar-track
+			background: #eee
+		&::-webkit-scrollbar-thumb
+			background: #8c0000
+		@media screen and(max-width:1200px)
+			padding: 30px 20px
+		@media screen and(max-width:576px)
+			padding: 20px  0
+			background: none
+	h1
+		font-size: 20px
+		color: #ffffff
+		font-weight: 500
+		text-transform: uppercasea
+		line-height: 22px
+		padding-bottom: 20px
+	.location
+		padding: 24px 0
+		display: flex
+		justify-content: center
+		align-items: flex-start
+		flex-direction: column
+		border-top: 1px solid rgba(152,158,153,.3)
+		flex-wrap: wrap
+		flex:  0 0 100%
+		@media screen and(max-width:1200px)
+			align-items: inherit
+		.box
+			display: flex
+			justify-content: flex-end
+			align-items: center
+			flex-wrap: wrap
+			&:first-child
+				margin-bottom: 16px
+			@media screen and(max-width:1200px)
+				&:first-child
+					margin-bottom: 0
+		.icon
+			flex: 0 0 20%
+			max-width: 20%
+		.caption
+			flex:  0 0 80%
+			max-width: 80%
+		.address
+			display: flex
+			justify-content: center
+			align-items: flex-start
+			flex-direction: column
+		em
+			font-size: 25px
+			color: #ffffff
+			margin-right: 24px
+			height: 24px
+			opacity: .5
+		.text
+			&:first-child
+				margin-bottom: 10px
+		.text,span,a
+			text-decoration: none
+			font-size: 15px
+			color: #ffffff
+			line-height: 22px
+			font-weight: 400
+		a
+			&:hover
+				text-decoration: underline
+	.form-wrapper
+		padding-left: 20px
+		h2
+			font-size: 30px
+			color: #333333
+			font-weight: 300
+			text-transform: uppercase
+			line-height: 32px
+			margin-bottom: 16px
+		h3
+			font-size: 15px
+			color: #333333
+			font-weight: 300
+			line-height: 22px
+			margin-bottom: 16px
+		@media screen and(max-width:1200px)
+			margin-top: 30px
+		@media screen and(max-width:1025px)
+			margin-top: 20px
+			h2
+				font-size: 24px
+		@media screen and(max-width:576px)
+			h2
+				margin-left: -10px
+			h3
+				margin-left: -10px
+
+		.wrap-form
+		.frm-btn-reset
+			display: none
+		.frm-btnwrap
+			display: flex
+			justify-content: flex-start
+			align-items: center
+		.form-group
+			margin-bottom: 16px
+			span
+				display: none
+			label
+				font-size: 15px
+				font-weight: 500
+				margin-bottom: 8px
+				color: #333333
+				line-height: 22px
+				text-transform: uppercase
+
+			span
+				font-style: italic
+				font-size: 14px
+				color: #8c0000
+			input,textarea
+				border: 1px solid #e1e1e1
+				width: 100%
+				padding: 8px 30px 8px 16px
+				color: #333333
+				font-size: 14px
+				line-height: 20px
+				background: #ffffff
+				&:focus
+					outline: none
+		.frm-btn
+			margin-top: 16px
+			margin-bottom: 15px
+			cursor: pointer
+			display: inline-flex
+			justify-content: center
+			align-items: center
+			padding: 4px 40px
+			background: none
+			color: #ffffff
+			background: #171e26
+			box-shadow: 0 0 1px rgba(0, 0, 0, 0)
+			position: relative
+			&:before
+				content: ''
+				position: absolute
+				top: 0
+				bottom: 0
+				right: 0
+				width: 3px
+				background-color: #8c0000
+				transform-origin: center
+				transform: scaleY(0)
+				transition: transform 0.5s ease
+			&:hover
+				&:before
+					transform: scaleY(1)
+				input[type='submit']
+					color: white
+					z-index: 125
+
+				// &:before
+				// 	-webkit-transform: scaleX(1)
+				// 	transform: scaleX(1)
+				// 	-webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66)
+				// 	transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66)
+			input[type='submit']
+				padding: 0
+				text-transform: uppercase
+				color: #ffffff
+				border: none
+				background: none
+				&:focus
+					outline: none
+			em
+				padding-left: 8px
+				color: #fff
+				font-size: 16px
+		@media screen and(max-width:1025px)
+			padding-bottom: 20px
+		@media screen and(max-width: 576px)
+			.form-group
+				padding: 4px 15px 4px 0
+				input,textarea
+					padding: 8px 16px
+		@media screen and(max-width: 450px)
+			.form-group
+				input,textarea
+					padding: 8px 16px
+.Contact-page
+	.footer-wrapper-top
+		display: none

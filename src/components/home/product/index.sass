@@ -1,0 +1,213 @@
+.home-product
+	background: #171e26
+	padding: 50px 0
+	@media screen and(max-width:1441px)
+		padding: 40px 0
+
+.tab-navigation-wrapper
+	padding: 20px  0
+	background: #171e26
+	ul
+		list-style-type: none
+		padding: 0
+		margin: 0
+		display: flex
+		justify-content: flex-start
+		align-items: center
+		li
+			display: inline-block
+			margin-right: 20px
+			&:hover
+				a
+					color: #ffffff
+			&.active
+				a
+					color: #ffffff
+				&:hover
+					a
+						color: rgba(#ffffff,.8)
+			a
+				transition: .3s all ease-in-out
+				text-decoration: none
+				text-transform: uppercase
+				font-size: 18px
+				font-weight: 700
+				color: #999999
+	@media screen and(max-width:1025px)
+		padding: 10px
+		white-space: nowrap
+		overflow: auto
+		ul
+			li
+				a
+					font-size: 16px
+	@media screen and(max-width:576px)
+		white-space: nowrap
+		overflow: auto
+		ul
+			li
+
+				&:last-child
+					padding-right: 20px
+
+.tab-wrapper
+	background: #171e26
+	.tab-item
+		display: none
+		&.active
+			display: block
+		.banner
+			position: relative
+			.wrapper
+				a
+					height: 200px
+					width: auto
+					img
+						margin: 0 0
+						width: 100%
+						height: 100%
+						object-fit: cover
+			.caption
+				position: absolute
+				left: 50px
+				bottom: 30%
+			.banner-button
+				border: 1px solid #ffffff
+				border-radius: 15px
+		
+				a
+					display: block
+					padding: 4px 16px
+					font-size: 14px
+					font-weight: 600
+					color: #ffffff
+					text-transform: uppercase
+.figure-product
+	.figure-image
+		position: relative
+		.discount
+			position: absolute
+			top: -5px
+			right: -5px
+			p
+				color: #ffffff
+				font-weight: 600
+				font-size: 14px
+				width: 32px
+				height: 20px
+				display: flex
+				justify-content: center
+				align-items: center
+				background: #b72600
+		a
+			display: block
+			height: 200px
+			width: auto
+			padding:  20px
+			img
+				width: 100%
+				height: 100%
+				object-fit: contain
+				transition: .3s  all ease-in-out
+		&:hover
+			a
+				img
+
+					margin-top: -4px
+	&:hover 
+		box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1)!important
+	figcaption
+		.top-caption
+			padding-bottom: 12px
+			h2
+				cursor: pointer
+				line-height: 22px
+				&:hover
+					*
+						color: #ffffff
+						text-decoration: none
+				*
+					margin-bottom: 0
+					display: block
+					font-size: 18px
+					font-weight: 700
+					color: #999999
+					text-transform: uppercase
+			h3
+				cursor: pointer
+				&:hover
+					*
+						color: #ffffff
+						text-decoration: none
+				*
+					min-height: 40px
+					display: -webkit-box
+					-webkit-line-clamp: 2
+					-webkit-box-orient: vertical
+					overflow: hidden
+					line-height: 20px
+					font-size: 14px
+					font-weight: 400
+					color: #999999
+		
+		.bottom-caption
+			display: flex
+			position: relative
+			justify-content: space-between
+			align-items: center
+			.price
+				h4
+					font-size: 18px
+					font-weight: 700
+					color: #b72600
+				h5
+					*
+						font-size: 14px
+						font-weight: 400
+						color: #999999
+			.cart
+				display: flex
+				justify-content: center
+				align-items: center
+				a
+					cursor: pointer
+					margin-left: 10px
+					&:hover
+							em
+								&:before
+									color: #b72600
+					&:first-child
+						&:hover
+							em
+								&:before
+									content: '\F2D1'
+									color: #b72600
+					em
+						transition: .3s all ease-in-out
+						font-size: 20px
+						color: #999999
+					img
+						margin-bottom: 8px
+	@media screen and(max-width:1350px)
+
+		.figure-image
+			a
+				height: 180px
+		figcaption
+			.top-caption
+				padding-bottom: 5px
+	@media screen and(max-width:1200px)
+		.figure-image
+			a
+				height: 150px
+		figcaption
+			.top-caption
+				padding-bottom: 5px
+	@media screen and(max-width:1025px)
+		.figure-image
+			a
+				height: 200px
+		figcaption
+			.top-caption
+				padding-bottom: 5px
+

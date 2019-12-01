@@ -1,0 +1,52 @@
+.promotion-display
+	padding: 50px 0
+	@media screen and(max-width:1025px)
+		padding: 40px 0
+.promotion-item
+	&:not(:last-child)
+		margin-bottom: 30px
+	transition: .3s all ease-in-out
+	&:hover
+		background: #f9f9f9
+	.promotion-image
+		a
+			display: block
+			height: 100%
+		img
+			max-width: 100%
+			height: auto
+			width: 100%
+	.promotion-caption
+		height: 100%
+		display: flex
+		justify-content: center
+		align-items: flex-start
+		flex-direction: column
+		.title
+			*
+				font-size: 24px
+				color: #333
+				text-transform: uppercase
+				font-weight: 400
+				transition: .3s all ease-in-out
+		.caption
+			display: block
+			font-size: 18px
+			margin-top: 16px
+		
+	@media screen and(max-width:1025px)
+		.promotion-caption
+			margin-top: 12px
+			.title
+				*
+					font-size: 20px
+			.caption
+				font-size: 16px
+.promotion 
+	.modulepager
+		li
+			&.active
+				a,span
+					color: #ffffff
+					background: #000000!important
+				

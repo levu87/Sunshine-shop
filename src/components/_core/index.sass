@@ -1,0 +1,602 @@
+.title-grey
+	text-transform: uppercase
+	font-size: 30px
+	color: #171e26
+	padding-bottom: 30px
+	position: relative
+	@media screen and(max-width:1441px)
+		padding-bottom: 20px
+	@media screen and(max-width:1025px)
+		font-size: 24px
+	@media screen and(max-width:768px)
+		padding-bottom: 16px
+		&:before
+			left: -10px
+.title-grey-center
+	text-align: center
+	text-transform: uppercase
+	font-size: 30px
+	color: #333333
+	padding-bottom: 30px
+	position: relative
+	@media screen and(max-width:1441px)
+		padding-bottom: 20px
+	@media screen and(max-width:1025px)
+		font-size: 24px
+	@media screen and(max-width:768px)
+		padding-bottom: 16px
+		&:before
+			left: -10px
+.title-white
+	text-transform: uppercase
+	font-size: 30px
+	color: #ffffff
+	padding-bottom: 30px
+	position: relative
+	&:before
+		content: "/"
+		display: block
+		position: absolute
+		top: 0
+		left: -1.5rem
+	@media screen and(max-width:1441px)
+		padding-bottom: 20px
+	@media screen and(max-width:1025px)
+		font-size: 24px
+	@media screen and(max-width:768px)
+		padding-bottom: 16px
+		&:before
+			left: -10px
+.title-grey-bg
+	padding: 12px 16px
+	margin-bottom: 30px
+	background: #171e26
+	*
+		font-size: 18px
+		color: #ffffff
+		text-transform: uppercase
+		font-weight: 600
+.product-detail
+	.product-tab-wrapper
+		margin-top: 30px
+	.tab-navigation-wrapper
+		ul
+			li
+				&.active
+					a 
+						color: #ffffff!important
+				a
+					color: #bbb 
+				&:hover
+					a
+						color: #ffffff!important
+	.tab-navigation-wrapper,.white-title-bg-grey
+		position: relative
+
+
+		&:before,&:after
+			content: ''
+			display: block
+			position: absolute
+			top: 0
+			width: 1000px
+			height: 67px
+			background: #171e26
+			@media screen and(max-width:1025px)
+				display: none
+		&:before
+			left: -1000px
+		&:after
+			right: -1000px
+	.white-title-bg-grey
+		position: relative
+		&:before,&:after
+			content: ''
+			display: block
+			position: absolute
+			top: 0
+			width: 1000px
+			height: 59px
+			background: #171e26
+			@media screen and(max-width:1025px)
+				display: none
+		&:before
+			left: -1000px
+		&:after
+			right: -1000px
+
+
+.homepage
+	.tab-navigation-wrapper
+		padding: 0
+		margin: 0
+		ul
+			li
+				a
+					color: #999999
+	.product-wrapper
+		opacity: 0
+		transition: opacity .3s ease-in-out
+		padding: 20px
+		display: none
+		display: flex
+		flex: 0 0 100%
+		flex-wrap: wrap
+		margin: 0
+		display: none
+	.product-item-category
+		padding: 0 10px
+		flex:  0 0 20%
+		max-width: 20%
+		figcaption
+			.top-caption
+				&:hover
+					*
+						text-decoration: none
+	
+			.bottom-caption
+				position: relative
+				.price
+					h4
+						color: #b72600 
+		@media screen and(max-width:1200px)
+			margin-bottom: 20px
+			flex:  0 0 25%
+			max-width: 25%
+		@media screen and(max-width:1025px)
+			flex:  0 0 33.333%
+			max-width: 33.333%
+			figcaption
+				.top-caption
+					h2
+						*
+							font-size: 17px
+					h3
+						*
+							font-size: 13px
+							height: 50px
+				.bottom-caption
+					.price
+						h4
+							font-size: 17px
+							color: #b72600 !important
+						h5
+							*
+								font-size: 13px
+		@media screen and(max-width:768px)
+			flex:  0 0 50%
+			max-width: 50%
+		@media screen and(max-width:576px)
+			.figure-image
+				padding:  0 16px
+		@media screen and(max-width:400px)
+			flex:  0 0 100%
+			max-width: 100%
+	.figure-product
+		min-height: 350px
+		max-height: 350px
+		margin-bottom: 20px
+		padding: 20px
+		transition: .3s all ease-in-out
+		&:hover
+			box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1) , 0px 0px 0px 1px #b72600
+		@media screen and(max-width:1350px)
+			padding: 0 20px
+			min-height: 315px
+			max-height: 315px
+		@media screen and(max-width:1200px)
+			padding: 0 20px
+			min-height: 272px
+			max-height: 272px
+		@media screen and(max-width:1025px)
+			padding: 20px
+			min-height: 350px
+			max-height: 350px
+.brand-product
+	background: #ffffff
+	.product-by-category
+		background: #ffffff
+	.product-wrapper
+		display: flex
+		justify-content: flex-start
+		align-items: center
+		flex:  0 0 100%
+		margin-right: -10px
+		margin-left: -10px
+		flex-wrap: wrap
+			
+	.product-item-category
+		flex:  0 0 20%
+		padding: 0 10px
+		max-width: 20%
+		figcaption
+			.top-caption
+				h2
+					*
+						color: #333333
+						font-size: 17px
+						&:hover
+							color: #ffffff
+				h3
+					*
+						color: #999999
+						font-size: 13px
+						&:hover
+							color: #333333
+			.bottom-caption
+				position: relative
+				.price
+					h4
+						font-size: 17px
+						color: #ffffff
+					h5
+						*
+							font-size: 13px
+		@media screen and(max-width:1200px)
+			margin-bottom: 20px
+			flex:  0 0 25%
+			max-width: 25%
+		@media screen and(max-width:1025px)
+			flex:  0 0 33.333%
+			max-width: 33.333%
+			
+		@media screen and(max-width:768px)
+			flex:  0 0 50%
+			max-width: 50%
+		@media screen and(max-width:576px)
+			.figure-image
+				padding:  0 16px
+		@media screen and(max-width:400px)
+			flex:  0 0 100%
+			max-width: 100%
+	.figure-product
+		min-height: 350px
+		max-height: 350px
+		margin-bottom: 20px
+		padding: 20px
+		transition: .3s all ease-in-out
+		&:hover
+			box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1) , 0px 0px 0px 1px #b72600
+		@media screen and(max-width:1350px)
+			padding: 0 20px
+			min-height: 315px
+			max-height: 315px
+		@media screen and(max-width:1200px)
+			padding: 0 20px
+			min-height: 272px
+			max-height: 272px
+		@media screen and(max-width:1025px)
+			padding: 20px
+			min-height: 350px
+			max-height: 350px
+.product-display
+	background: #f8f8f8
+	.product-filter-side
+		margin-top: 0
+	.product-list
+		margin-top: 0
+	.product-item-category
+		background: #ffffff
+		padding: 0
+		margin-bottom: 20px
+		&
+		.figure-image
+			.discount
+				top: 5px
+				right: 5px
+		&:hover
+			box-shadow: 0 0 15px 0 rgba(0,0,0,.1)
+			.figure-image
+				background: none
+		.button-view-more
+			transition: .3s opacity ease-in-out
+			opacity: 0
+			pointer-events: none
+			display: flex
+			justify-content: center
+			align-items: center
+			cursor: pointer
+			text-align: center
+			border: 1px solid #ffffff
+			margin-bottom: 10px
+			a
+				display: flex
+				justify-content: center
+				align-items: center
+				padding: 6px 10px
+				font-size: 14px
+				font-weight: 400
+				padding: 8px 30px
+				color: #ffffff
+				white-space: nowrap
+		.button-cart
+			opacity: 0
+			transition: .3s opacity ease-in-out
+			pointer-events: none
+			display: flex
+			justify-content: center
+			align-items: center
+			border-top: 1px solid #ffffff
+			border-bottom: 1px solid #ffffff
+			a
+				cursor: pointer
+				padding: 8px 10px
+				display: flex
+				justify-content: center
+				align-items: center
+				font-size: 14px
+				color: #ffffff
+				font-weight: 400
+				img
+					width: 20px
+					height: 20px
+		figcaption
+			padding: 0 20px 20px 20px
+			.top-caption
+				padding-bottom: 12px
+				h2
+					cursor: pointer
+					line-height: 22px
+					&:hover
+						*
+							color: #ffffff
+							text-decoration: none
+					*
+						margin-bottom: 0
+						display: block
+						font-size: 18px
+						font-weight: 700
+						color: #999999
+						text-transform: uppercase
+				h3
+					cursor: pointer
+					&:hover
+						*
+							text-decoration: none
+							color: #ffffff
+					*
+						display: -webkit-box
+						-webkit-line-clamp: 2
+						-webkit-box-orient: vertical
+						overflow: hidden
+						line-height: 20px
+						font-size: 14px
+						font-weight: 400
+						color: #999999
+			.bottom-caption
+				display: flex
+				position: relative
+				justify-content: space-between
+				align-items: center
+				.price
+					h4
+						font-size: 18px
+						font-weight: 700
+						color: #b72600
+					h5
+						*
+							font-size: 14px
+							font-weight: 400
+							color: #999999
+				.cart
+					display: flex
+					justify-content: center
+					align-items: center
+					a
+						cursor: pointer
+						margin-left: 10px
+						&:first-child
+							&:hover
+								em
+									&:before
+										content: '\F2D1'
+										color: #b72600
+						em
+							transition: .3s all ease-in-out
+							font-size: 20px
+							color: #999999
+						img
+							margin-bottom: 8px
+.button-view-more
+	transition: .3s opacity ease-in-out
+	opacity: 0
+	pointer-events: none
+	display: flex
+	justify-content: center
+	align-items: center
+	cursor: pointer
+	text-align: center
+	border: 1px solid #ffffff
+	margin-bottom: 10px
+	a
+		display: flex
+		justify-content: center
+		align-items: center
+		padding: 6px 10px
+		font-size: 14px
+		font-weight: 400
+		padding: 8px 30px
+		color: #ffffff
+		white-space: nowrap
+.view-more-grey
+	margin-top: 16px
+	transition: .3s opacity ease-in-out, .3s ease-in-out
+	display: inline-flex
+	justify-content: flex-start
+	align-items: center
+	cursor: pointer
+	text-align: center
+	border: 1px solid #333
+	margin-bottom: 10px
+	&:hover
+		text-decoration: underline
+		border-color: #b72600
+
+		a
+			color: #b72600
+	a
+		transition: .3s all ease-in-out
+		text-decoration: none
+		display: flex
+		justify-content: center
+		align-items: center
+		padding: 6px 10px
+		font-size: 14px
+		font-weight: 400
+		padding: 8px 30px
+		color: #333333
+		white-space: nowrap
+
+.button-cart
+	opacity: 0
+	transition: .3s opacity ease-in-out
+	pointer-events: none
+	display: flex
+	justify-content: center
+	align-items: center
+	border-top: 1px solid #ffffff
+	border-bottom: 1px solid #ffffff
+	a
+		cursor: pointer
+		padding: 8px 10px
+		display: flex
+		justify-content: center
+		align-items: center
+		font-size: 14px
+		color: #ffffff !important
+		font-weight: 400
+		em
+			font-size: 20px
+			color: #ffffff
+		img
+			width: 20px
+			height: 20px
+.big-title
+	font-size: 36px
+	font-weight: 300
+	color: #333
+	line-height: 1.25
+	margin-bottom: 16px
+	@media (max-width: 1024.98px)
+		font-size: 29px
+	@media (max-width: 767.98px)
+		font-size: 22px
+.cart-icon 
+	cursor: pointer
+	width: 20px
+	height: 20px
+	display: flex
+	justify-content: center
+	align-items: center
+	background: url('../img/cart-grey.png')
+	background-repeat: no-repeat
+	background-size: contain
+	&:hover
+		background: url('../img/cart-red.png')
+		background-repeat: no-repeat
+		background-size: contain
+	&:after
+		content: ''
+		display: block
+		position: absolute
+		left: 0
+		bottom: 0
+		wid
+#amount
+	margin-top: 10px
+	background: #f8f8f8
+//Cart item wrapper
+.cart-item-quantity
+	position: absolute
+	bottom: 5px
+	pointer-events: none
+	z-index: -1
+	opacity: 0
+	left: 0
+	border: solid 1px #c5c5c5
+	&.active
+		z-index: 111
+		opacity: 0
+		pointer-events: auto
+		transition:  opacity .3s ease-in-out
+	.input-group
+		display: flex
+		justify-content: center
+		align-items: center
+	.input-group-btn
+		display: flex
+		justify-content: center
+		align-items: center
+		background: #f5f5f5
+		height: 40px
+		width: 50px
+		position: relative
+		&:hover
+			color: #fff
+			transition: .25s all ease-in-out
+		.qty-minus
+			height: 100%
+			width: 100%
+			line-height: 40px
+			text-align: center
+			display: flex
+			align-items: center
+			justify-content: center
+			span
+				color: #c5c5c5
+				&:hover 
+					color: #8c0000
+						
+		.qty-plus
+			height: 100%
+			width: 100%
+			line-height: 40px
+			text-align: center
+			display: flex
+			align-items: center
+			justify-content: center
+			span
+				color: #c5c5c5
+				&:hover 
+					color: #8c0000
+				
+	input
+		border: 0
+		text-align: center
+		background: #ffffff
+		width: 50px
+		height: 40px
+.homepage
+	.product-item-category
+		background: none!important
+	.product-by-category
+		position: relative
+.product-brand-list
+	// background: #171e26!important
+	.brand-detail-item 
+		
+		margin-bottom: 20px
+		.product-item-category
+			padding: 20px
+			.top-caption
+				h2 
+					a 
+						color: #cccccc
+			&:hover 
+				h2,h3 
+					a 
+						color: #ffffff 
+						text-decoration: none
+		&:hover 
+			box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1) 
+.user-page
+	.btn-addtocart
+		position: relative
+		&:after 
+			content: '\f110'
+			font-family: Material Design Icons
+			display: block 
+			position: absolute 
+			left: 0 
+			top: 50%
+			transform: translate(-50%)

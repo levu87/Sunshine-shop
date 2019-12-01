@@ -1,0 +1,13 @@
+extends _layout.pug
+
+block var
+	- var title = 'Home'
+	- var bodyClass = 'customer-service'
+
+block main
+	include ../components/top-banner/index.pug
+	include ../components/breadcrumb/news.pug
+	include ../components/nav/nav-news.pug
+
+	include ../components/news/index.pug
+	include ../components/news/news-pagination/index.pug
